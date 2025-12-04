@@ -6,7 +6,7 @@
 
 ranges = []
 
-with open('input.txt') as f:
+with open('test.txt') as f:
     content = f.read()
     values = content.split(',')
     for id_range in values:
@@ -20,7 +20,7 @@ def getInvalidIds(id_range):
     total = 0
 
     for num in range(int(lower), int(upper)+1):
-        if isInvalid(str(num)):
+        if isInvalid2(str(num)):
             total += num
     
     return total
@@ -35,6 +35,8 @@ def isInvalid(num):
     second_half = num[midpoint:]
     return first_half == second_half
 
+def isInvalid2(num):
+    pass
 
 total = 0
 for id_range in ranges:
