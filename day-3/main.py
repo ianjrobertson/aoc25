@@ -1,4 +1,5 @@
 def maxPair(num):
+    print(len(num))
     max_pair = 0
     for i in range(len(num)):
         for j in range(i+1, len(num)):
@@ -9,11 +10,12 @@ def maxPair(num):
     return max_pair
 
 def max12(num):
-    pass
+    max_num = 0
 
 # the biggest 12 digit number you can make
 # you still need to respect relative order of the numbers. 
 
+# in one pass, can you compute the maximum 
 
 nums = []
 
